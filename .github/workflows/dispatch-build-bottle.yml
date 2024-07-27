@@ -195,7 +195,7 @@ jobs:
           BREWTESTBOT_NAME_EMAIL: "BrewTestBot <1589480+BrewTestBot@users.noreply.github.com>"
         working-directory: ${{ env.BOTTLES_DIR }}
         run: |
-          brew pr-upload --verbose --keep-old --committer="$BREWTESTBOT_NAME_EMAIL" --root-url="https://ghcr.io/v2/homebrew/core"
+          brew pr-upload --verbose --keep-old --committer="$BREWTESTBOT_NAME_EMAIL" --root-url="https://git.lusd1.org/LUSD/core"
 
       - name: Push commits
         uses: Homebrew/actions/git-try-push@master
